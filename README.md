@@ -35,6 +35,8 @@ and includes a 6 menu option with the following possible tasks that the user can
 
 ## Function Interconnectivity Diagram
 
+The image below describes how the functions are connected with each other to better visualise the process:
+
 ![Photo of the function interconnectivity diagram](Screenshots/function_interconnectivity_diagram.jpg)
 
 
