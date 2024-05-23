@@ -17,3 +17,36 @@ The structure and the way that artificial neural networks operate is inspired by
 
 
 ## Dataset
+
+You can find details about the dataset here: [Banknote Authentication](https://archive.ics.uci.edu/ml/datasets/banknote+authentication).
+
+
+## Code
+
+The program uses Python the libraries numpy, pandas, matplotlib and sklearn and includes a 6 menu option with the following possible tasks that the user can choose from: 
+1. Read the labelled text data file, display the first 5 lines
+2. Choose the size of the hidden layers of the MLP topology (e.g. 6-?-?-2)
+3. Choose the size of the training step (0.001 - 0.5, [ENTER] for adaptable)
+4. Train on 80% of labeled data, display progress graph
+5. Classify the unlabeled data, output training report and confusion matrix
+6. Exit
+There are different functions that are called based on the menu option that the user selects and each perform a specific task. Throughout the entire process, there is error trapping in case the user enters an invalid input as well as if any other error occurs.
+What is also important to point out is that there are different functions that co
+
+
+
+ # a function that adds the neurons of each hidden layer
+
+ # a function that calculates the forward propagation
+
+ # a function that calculates the backward propagation
+
+ # a function for training the dataset
+
+  # a function that produces the graph for weight changes and epochs
+
+  # a function to classify the unlabeled data
+
+  
+
+
