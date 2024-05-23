@@ -35,17 +35,17 @@ What is also important to point out is that there are different functions that c
 
 
 
- # a function that adds the neurons of each hidden layer
+ a function that adds the neurons of each hidden layer
 
- # a function that calculates the forward propagation
+  a function that calculates the forward propagation
 
- # a function that calculates the backward propagation
+  a function that calculates the backward propagation
 
- # a function for training the dataset
+ a function for training the dataset
 
-  # a function that produces the graph for weight changes and epochs
+   a function that produces the graph for weight changes and epochs
 
-  # a function to classify the unlabeled data
+   a function to classify the unlabeled data
 
   
 
