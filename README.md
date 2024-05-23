@@ -23,30 +23,18 @@ You can find details about the dataset here: [Banknote Authentication](https://a
 
 ## Code
 
-The program uses Python the libraries numpy, pandas, matplotlib and sklearn and includes a 6 menu option with the following possible tasks that the user can choose from: 
-1. Read the labelled text data file, display the first 5 lines
-2. Choose the size of the hidden layers of the MLP topology (e.g. 6-?-?-2)
-3. Choose the size of the training step (0.001 - 0.5, [ENTER] for adaptable)
-4. Train on 80% of labeled data, display progress graph
-5. Classify the unlabeled data, output training report and confusion matrix
-6. Exit
-There are different functions that are called based on the menu option that the user selects and each perform a specific task. Throughout the entire process, there is error trapping in case the user enters an invalid input as well as if any other error occurs.
-What is also important to point out is that there are different functions that co
+The program uses Python the libraries numpy, pandas, matplotlib and sklearn as well as different functions that add neurons to each hidden layer, perform the forward propagation and the backward propagation, train the dataset, produce the graph for the weight changes and epochs and classify the unlabeled data. Throughout the entire process, there is also error trapping in case the user enters an invalid input as well as if any other error occurs. In more detail, there are 6 menu options that the user can chose from: 
 
+and includes a 6 menu option with the following possible tasks that the user can choose from: 
+1. Read the labelled text data file, display the first 5 lines: Extracts the data from the txt file, assigns labels and then saves them in a new txt file that will be used from training.
+2. Choose the size of the hidden layers of the MLP topology (e.g. 6-?-?-2): Asks the user for the size of the topology (the amount of hidden layers) and the neurons that each layer should have.
+3. Choose the size of the training step (0.001 - 0.5, [ENTER] for adaptable): Asks the user for the size of the training step, which could be either 0.001, 0.5 or somewhere inbetween that range.
+4. Train on 80% of labeled data, display progress graph: It splits the data into training and testing set, adds the hidden layers that the user previously entered and trains on 80% of the data based on the training step that the user entered. Afterwards, it produces the progress graph with how each neuron evolves during the training process.
+5. Classify the unlabeled data, output training report and confusion matrix: After having trained on the training set, it tests on the testing set and sees how it performs on that set by finding the accuracy and producing a confusion matrix.
+6. Exit: Stops the program.
 
+## Function Interconnectivity Diagram
 
- a function that adds the neurons of each hidden layer
-
-  a function that calculates the forward propagation
-
-  a function that calculates the backward propagation
-
- a function for training the dataset
-
-   a function that produces the graph for weight changes and epochs
-
-   a function to classify the unlabeled data
-
-  
+![Photo of the function interconnectivity diagram](Screenshots/function_interconnectivity_diagram.jpg)
 
 
